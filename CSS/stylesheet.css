@@ -48,7 +48,7 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0; /*fixed the weird spacing at the top!!!!!!!*/
-	z-index: 100;
+	z-index: 90;
 }
 #logo {
 	text-align: right;
@@ -105,9 +105,6 @@ GALLERY: MAIN PAGE
 	width: 225px;
 	border-radius: 15px;
 	border: 3px solid black;
-}
-.gallery .flip-me {
-	-webkit-transform: rotate(90deg);
 }
 .gallery p {
 	padding-top: 30px;
@@ -239,6 +236,44 @@ LINK STYLES:
 }
 .about-me p a:hover {
 	color: aqua;
+}
+
+
+/****************************************
+JS: OVERLAY
+****************************************/
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+  z-index: 100;
+}
+
+#overlay img {
+ margin-top: 5%;
+ border-radius: 10px;
+ height: 500px;
+ width: 500px;
+}
+
+#overlay p {
+ 	padding: 20px;
+ 	border-bottom: 10px;
+ 	border-radius: 10px;
+ 	color:white; 
+	width: 500px;
+	margin: 0 auto; /*centering paragraph*/
+	background: black;
+}
+
+button {
+	border-radius: 5px;
+	background: #97dea7;
 }
 
 
